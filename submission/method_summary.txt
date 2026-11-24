@@ -1,0 +1,13 @@
+Track 2: compact complex-STFT neural classifier, trained from random initialization.
+Explicit two-sided complex STFT: 256 frequency bins x 66 time frames, 256-sample rectangular windows, non-overlapping blocks and right zero padding. Phase-sensitive learned projection plus a small power-STFT CNN.
+
+Gradient training: class-balanced source-pulse sampling, all 13 noise levels after warm-up, paired clean/noisy cross-entropy and feature consistency; raw/EMA checkpoint selection on validation only.
+
+Full validation balanced accuracy: 0.92017132; separate audit: 0.92035113.
+
+Training, hardware and SNR details: training_summary.json and training_config.json.
+
+
+Inference needs model.pt, radarml_track2_neural_infer.py and the blind test package only.
+
+use this command to run :  python inference.py --model "/path/to/model.pt" --participants "/path/to/participants"

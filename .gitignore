@@ -1,0 +1,15 @@
+# model checkpoints and training artifacts — 797 files, ~107MB
+*.pt
+*.pth
+# the dataset is UCL's and is not redistributed
+*.npy
+*.zip
+recorded_dataset/
+participants/
+blind_test*/
+# competition predictions
+submission*.csv
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store

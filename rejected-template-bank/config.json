@@ -1,0 +1,56 @@
+{
+  "seed": 42,
+  "train_pulses_per_file": 80,
+  "template_snr": 30,
+  "selection_pulses_per_file": 4,
+  "batch_size": 128,
+  "workers": 2,
+  "candidates": [
+    "coherent:max",
+    "coherent:mixture",
+    "coherent_clip:max",
+    "coherent_clip:mixture",
+    "unknown_phase:max",
+    "unknown_phase:mixture",
+    "free_amplitude:max",
+    "free_amplitude:mixture"
+  ],
+  "window": [
+    2400,
+    14640
+  ],
+  "track": "B",
+  "track_number": 2,
+  "model_family": "complex_fft_template_bank",
+  "classes": [
+    "barker",
+    "cw",
+    "fmcw",
+    "fsk",
+    "hyp",
+    "nlfm",
+    "quad"
+  ],
+  "selected_candidate": "coherent_clip:mixture",
+  "inference_precision": "float32",
+  "inference_augmentation": "none",
+  "manifest_sha256": "4ccc4937f4ba0e9993837bb26a5ba4463f1a880b689a753ad3a0e39b76ebafc7",
+  "hardware": {
+    "device": "cuda",
+    "cpu": "x86_64",
+    "platform": "Linux-6.18.48+-x86_64-with-glibc2.39",
+    "gpu": "Tesla T4",
+    "gpu_memory_bytes": 15636037632,
+    "python": "3.13.15 (main, Aug  6 2026, 11:06:22) [GCC 13.3.0]",
+    "numpy": "2.1.3",
+    "torch": "2.11.0+cu128",
+    "cuda": "12.8",
+    "cudnn": 91900
+  },
+  "actual_data_format": "expanded",
+  "setup_seconds": 183.110795779,
+  "model_parameters": 22176000,
+  "external_training_data": false,
+  "pretrained": false,
+  "model_bytes": 88711181
+}

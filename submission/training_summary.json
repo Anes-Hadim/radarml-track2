@@ -1,0 +1,51 @@
+{
+  "model_family": "compact_complex_stft_neural",
+  "classes": [
+    "barker",
+    "cw",
+    "fmcw",
+    "fsk",
+    "hyp",
+    "nlfm",
+    "quad"
+  ],
+  "track": "2",
+  "parameters": 2477663,
+  "model_bytes": 9924819,
+  "training_source_pulses": 52800,
+  "eligible_training_snrs": [
+    30,
+    25,
+    20,
+    15,
+    10,
+    5,
+    0,
+    -5,
+    -10,
+    -15,
+    -20,
+    -25,
+    -30
+  ],
+  "training_draws": 8448000,
+  "epochs_completed": 80,
+  "fit_seconds": 4003.419004197002,
+  "setup_seconds_this_session": 272.660274821,
+  "stop_reason": "epochs_completed",
+  "hardware": {
+    "device": "cuda",
+    "cpu": "x86_64",
+    "logical_cpus": 4,
+    "threads": 4,
+    "platform": "Linux-6.18.48+-x86_64-with-glibc2.39",
+    "python": "3.13.15 (main, Aug  6 2026, 11:06:22) [GCC 13.3.0]",
+    "torch": "2.11.0+cu128",
+    "numpy": "2.1.3",
+    "gpu": "Tesla T4"
+  },
+  "manifest_sha256": "4ccc4937f4ba0e9993837bb26a5ba4463f1a880b689a753ad3a0e39b76ebafc7",
+  "inference_inputs": "model.pt and participant package only",
+  "external_data": false,
+  "pretrained": false
+}

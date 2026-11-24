@@ -1,0 +1,40 @@
+{
+  "seed": 42,
+  "epochs": 80,
+  "samples_per_epoch": 105600,
+  "batch_size": 256,
+  "workers": 2,
+  "learning_rate": 0.001,
+  "weight_decay": 0.001,
+  "label_smoothing": 0.005,
+  "clean_loss_weight": 0.25,
+  "feature_consistency_weight": 2.0,
+  "ema_decay": 0.999,
+  "warmup_epochs": 2,
+  "patience": 18,
+  "max_run_hours": 10.5,
+  "train_pulses_per_file": 80,
+  "selection_pulses_per_file": 4,
+  "train_snrs": [
+    30,
+    25,
+    20,
+    15,
+    10,
+    5,
+    0,
+    -5,
+    -10,
+    -15,
+    -20,
+    -25,
+    -30
+  ],
+  "hard_snr_weight": 2.0,
+  "model_kwargs": {
+    "n_fft": 256,
+    "projection_rank": 64,
+    "hidden": 128,
+    "dropout": 0.1
+  }
+}
